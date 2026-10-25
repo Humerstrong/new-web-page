@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Web Page</title>
+    <link rel="stylesheet" href="experiments 8/style.css">
+    <link rel="stylesheet" href="experiments 9/style.css">
+    <script src="experiments 9/links.js" defer></script>
+</head>
+<body>
+<main>
+    <header>
+        <p class="subtitle">HTML AND CSS</p>
+        <h1>Welcome to My Web Page</h1>
+        <p>A simple demonstration of CSS fonts, backgrounds and links.</p>
+    </header>
+    <nav>
+        <a href="#fonts">Font Styles</a>
+        <a href="#background">Background Image</a>
+        <a href="#links">Useful Links</a>
+    </nav>
+    <section id="fonts">
+        <h2>Different Font Styles</h2>
+        <p class="normal-text">This paragraph uses the Arial font with a dark gray text color.</p>
+        <p class="serif-text">This paragraph uses the Georgia font with italic styling.</p>
+        <p class="mono-text">This paragraph uses the Courier New font with bold styling.</p>
+        <p id="highlight">CSS selectors help us apply different styles to different elements.</p>
+    </section>
+    <section id="background">
+        <h2>Background Image</h2>
+        <div class="image-box">
+            <h3>A Background for Every Element</h3>
+            <p>Each element has a background image. This box uses a different image from the page background.</p>
+        </div>
+    </section>
+    <section id="links">
+        <h2>Useful Links</h2>
+        <p>These links open in a new tab so you can see their appearance change here.</p>
+        <div class="link-list">
+            <a href="https://www.w3schools.com/" target="_blank" rel="noopener">W3Schools &nearr;</a>
+            <a href="https://developer.mozilla.org/" target="_blank" rel="noopener">MDN Web Docs &nearr;</a>
+            <a href="https://www.wikipedia.org/" target="_blank" rel="noopener">Wikipedia &nearr;</a>
+        </div>
+        <div class="link-help">
+            <p>Blue: not clicked here &middot; Purple: visited or clicked here</p>
+            <p>Hover: orange &middot; Press and hold: red</p>
+            <p>Move your pointer away after clicking to see the purple state.</p>
+            <button type="button" id="reset-links">Reset this page's click markers</button>
+            <p id="link-status" aria-live="polite">The page remembers which resource links you click.</p>
+        </div>
+    </section>
+    <footer>My Web Page &middot; Created using HTML and CSS</footer>
+</main>
+</body>
+</html>

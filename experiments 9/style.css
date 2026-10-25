@@ -1,0 +1,74 @@
+* {
+    background-repeat: repeat;
+    background-position: left top;
+}
+
+body {
+    background-size: 140px 140px;
+    background-attachment: fixed;
+}
+
+.image-box {
+    background-repeat: repeat-x;
+    background-position: left bottom;
+    background-size: 100px 110px;
+}
+
+nav a:link {
+    color: #164d8d;
+}
+
+nav a:visited {
+    color: #7326a1;
+}
+
+nav a:hover {
+    color: white;
+    background-color: #a64500;
+}
+
+nav a:active {
+    color: white;
+    background-color: #a10f2b;
+}
+
+.link-list a:link {
+    color: #164d8d;
+    background-color: #eaf3ff;
+    border-color: #164d8d;
+}
+
+.link-list a:visited,
+.link-list a.clicked {
+    color: #ffffff;
+    background-color: #7326a1;
+    border-color: #4b126f;
+}
+
+.link-list a:hover {
+    color: #ffffff;
+    background-color: #a64500;
+    border-color: #743000;
+    outline: 3px solid #f3c58f;
+    outline-offset: 2px;
+}
+
+.link-list a:active {
+    color: #ffffff;
+    background-color: #a10f2b;
+    border-color: #66091b;
+    outline: 3px solid #e7a1ad;
+    outline-offset: 2px;
+    box-shadow: inset 0 3px 6px #48000e;
+}
+
+a:focus-visible, button:focus-visible {
+    outline: 3px dashed #173f72;
+    outline-offset: 5px;
+}
+
+.link-list.reset-demo a:not(.clicked):not(:hover):not(:active) {
+    color: #164d8d;
+    background-color: #eaf3ff;
+    border-color: #164d8d;
+}
